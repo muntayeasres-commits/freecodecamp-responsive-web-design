@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id=title>Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve our platform.</p>
+<form id="survey-form">
+<input type="text" id="name" placeholder="e.g Abebe" required>
+<input id="email" type="email" placeholder="e.g abc@gmail.com" required>
+<input id="number" type="number" min="5" max="100" placeholder="eg.1,2.." required>
+<label id="name-label" for="text">name-label</label>
+<label id="email-label" for="text" >email-label</label>
+<label id="number-label" for="text">number-label</label>
+ <select id="dropdown" required>
+  <selected>Select current role</option>
+    <option value="student">Student</option>
+    <option value="job">Full Time Job</option>
+  </select>
+  <input type="radio"value="name" name="name">student</input>
+  <input type="radio"value="name" name="name">job</input>
+  <input type="checkbox" value="student">student</input>
+  <input type="checkbox" value="job">job</input>
+  <textarea></textarea>
+  <input type="submit" id="submit" value="submit"></input>
+</form>
+</body>
+</html>
