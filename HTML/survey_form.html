@@ -2,30 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
   </head>
 
   <body>
-    <h1 id=title>Survey Form</h1>
-<p id="description">Thank you for taking the time to help us improve our platform.</p>
-<form id="survey-form">
-<input type="text" id="name" placeholder="e.g Abebe" required>
-<input id="email" type="email" placeholder="e.g abc@gmail.com" required>
-<input id="number" type="number" min="5" max="100" placeholder="eg.1,2.." required>
-<label id="name-label" for="text">name-label</label>
-<label id="email-label" for="text" >email-label</label>
-<label id="number-label" for="text">number-label</label>
- <select id="dropdown" required>
-  <selected>Select current role</option>
-    <option value="student">Student</option>
-    <option value="job">Full Time Job</option>
-  </select>
-  <input type="radio"value="name" name="name">student</input>
-  <input type="radio"value="name" name="name">job</input>
-  <input type="checkbox" value="student">student</input>
-  <input type="checkbox" value="job">job</input>
-  <textarea></textarea>
-  <input type="submit" id="submit" value="submit"></input>
-</form>
-</body>
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">
+      Thank you for taking the time to help us improve our platform.
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="e.g. Abebe"
+        required
+      />
+
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="e.g. abc@gmail.com"
+        required
+      />
+
+      <label id="number-label" for="number">Age</label>
+      <input
+        type="number"
+        id="number"
+        name="age"
+        min="5"
+        max="100"
+        placeholder="e.g. 20"
+        required
+      />
+
+      <label for="dropdown">Select current role</label>
+      <select id="dropdown" name="role" required>
+        <option value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+      </select>
+
+      <p>Which option best describes you?</p>
+
+      <label>
+        <input type="radio" name="role-choice" value="student" />
+        Student
+      </label>
+
+      <label>
+        <input type="radio" name="role-choice" value="job" />
+        Full Time Job
+      </label>
+
+      <p>Which areas interest you?</p>
+
+      <label>
+        <input type="checkbox" name="interests" value="student" />
+        Student resources
+      </label>
+
+      <label>
+        <input type="checkbox" name="interests" value="job" />
+        Career opportunities
+      </label>
+
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
 </html>
